@@ -51,6 +51,7 @@ function addTodo(event) {
     //Create delete button
     let deleteButton = document.createElement("span");
 
+    //Assign delete button class, positioning, overlay, attributes, etc.
     deleteButton.className = "deletebtns";
 
     deleteButton.style.position = "absolute";
