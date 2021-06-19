@@ -26,7 +26,7 @@ i = 1;
 x = 1;
 
 function addTodo(event) {
-  if (todoInput.value === "") {
+  if (todoInput.value == false) {
       //Alert to enter something!
     window.alert("Please enter a new item");
 
@@ -83,4 +83,8 @@ function deleteToDo(e) {
   //Remove item
 
   itemValue.parentElement.removeChild(itemValue);
+
+  if([...allItems].length == 0) {
+    deleteAll.style.display = "none";
+  }
 }
