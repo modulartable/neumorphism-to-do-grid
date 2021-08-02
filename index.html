@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 		<meta http-equiv='X-UA-Compatible' content='ie-edge' />
@@ -8,15 +9,15 @@
 		<link rel='stylesheet' href='app.css' />
 	</head>
 	<body>
-	<center><div id="todo-header">
-		<h1 id="title">To Do Grid</h1>
-		<input type="text" id="todo-input" placeholder="What's there to do?" required></input> <button id="add-todo" class="buttons"><img src="https://i.ibb.co/12xx5py/add.png"></button>
-	</div></center>
-		<div id="container">
+	<div id="todo-header" class="container-fluid text-center">
+		<h1 id="title" class="text-center">To Do Grid</h1>
+		<input type="text" id="todo-input" placeholder="What's there to do?" required></input> <button id="add-todo" class="buttons image-responsive"><img src="https://i.ibb.co/12xx5py/add.png"></button>
+	</div>
+		<div id="container" class="container-fluid">
 	
 	</div>
-	<div id="delete-container">
-		<center><button id="deleteall" class="buttons">Delete All</button></center>
+	<div id="delete-container" class="container-fluid text-center">
+	<button id="deleteall" class="buttons">Delete All</button>
 	</div>		
 	</body>
 	<script src='app.js'></script>

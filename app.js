@@ -15,8 +15,14 @@ const deleteAll = document.getElementById("deleteall");
 
 const allItems = document.getElementsByClassName("todo-list");
 
-//Add event listener to add button
+//Add event listener to add and delete buttons as well as the window for the enter key 
 addButton.addEventListener("click", addTodo);
+
+window.addEventListener("keydown", event => {
+  if (event.key == 'Enter') {
+   addTodo();
+  }
+  })
 
 deleteAll.addEventListener("click", deleteList);
 
@@ -88,3 +94,4 @@ function deleteToDo(e) {
     deleteAll.style.display = "none";
   }
 }
+

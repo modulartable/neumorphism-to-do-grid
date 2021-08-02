@@ -7,10 +7,6 @@ body {
   color: white;
 }
 
-#todo-header {
-  margin: 15px;
-  padding: 15px;
-}
 
 #title {
 text-decoration-skip-ink: ;
@@ -25,11 +21,11 @@ text-decoration-skip-ink: ;
 }
 
 #todo-input {
-  border-radius: 50px;
-  border-radius: 50px;
+  border-radius: 35px;
   background: #b087c0;
   box-shadow: 20px 20px 60px #9673a3, -20px -20px 60px #ca9bdd;
   outline: none;
+text-align: center;
 }
 
 #todo-input::placeholder {
@@ -74,7 +70,7 @@ color: white;
 .deletebtns {
 border-style: hidden;
 background: transparent;
-margin-left: 55px;
+margin-left: 35px;
 margin-top: -15px;
 opacity: 50%;
 }
